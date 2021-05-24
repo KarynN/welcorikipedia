@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta author='Karyn Nakamura'>
+	<title>KARYN NAKAMURA</title>
+	<meta name="viewport" content="initial-scale=1" /> 
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+  <link rel="image_src" href="./img/pink.png"/>
+	<meta property="og:image" content = "./img/pink.png" />
+	<link rel="icon" href="./img/pink.png">
+	<style type="text/css">
+		
+body {
+	margin: 0;
+	padding: 0;
+	}
+
+.one-one {
+    width: 25vw;
+    height: 25vh;
+    overflow: hidden;
+    float: left;
+}
+
+iframe {
+    width: 100% !important;
+    height: 100% !important;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+#div_iframe {
+  border-style: inset;
+  border-color: grey;
+  overflow: scroll;
+  height: 500px;
+  width: 90%
+}
+
+
+ 	</style>
+</head>
+
+<body>
+  <div class='one-one'>
+    <iframe id = "oneone" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "onetwo" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "onethree" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "onefour" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+
+  <div class='one-one'>
+    <iframe id = "twoone" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "twotwo" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "twothree" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "twofour" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+
+  <div class='one-one'>
+    <iframe id = "threeone" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "threetwo" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "threethree" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "threefour" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+
+  <div class='one-one'>
+    <iframe id = "fourone" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "fourtwo" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "fourthree" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+  <div class='one-one'>
+    <iframe id = "fourfour" src = "main.html" frameborder = 0 ></iframe>
+  </div>
+
+<script type="text/javascript">
+
+var width = window.innerWidth;
+var height = window.innerHeight;
+
+
+/*
+iframe {
+    width: 76.92% !important;
+    height: 76.92% !important;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+
+
+
+*/
+var oneone = document.getElementById('oneone');
+oneone.onload = function () {
+    oneone.contentWindow.scrollTo(0,0);
+}
+var onetwo = document.getElementById('onetwo');
+oneone.onload = function () {
+    onetwo.contentWindow.scrollTo(width/3.99,0);
+}
+var onethree = document.getElementById('onethree');
+onethree.onload = function () {
+    onethree.contentWindow.scrollTo(width/2,0);
+}
+var onefour = document.getElementById('onefour');
+onefour.onload = function () {
+    onefour.contentWindow.scrollTo(width/1.3,0);
+}
+
+var twoone = document.getElementById('twoone');
+twoone.onload = function () {
+    twoone.contentWindow.scrollTo(0,height/4);
+}
+var twotwo = document.getElementById('twotwo');
+twotwo.onload = function () {
+    twotwo.contentWindow.scrollTo(width/3.99,height/4);
+}
+var twothree = document.getElementById('twothree');
+twothree.onload = function () {
+    twothree.contentWindow.scrollTo(width/2,height/4);
+}
+var twofour = document.getElementById('twofour');
+twofour.onload = function () {
+    twofour.contentWindow.scrollTo(width/1.3,height/4);
+}
+
+var threeone = document.getElementById('threeone');
+threeone.onload = function () {
+    threeone.contentWindow.scrollTo(0,height/2);
+}
+var threetwo = document.getElementById('threetwo');
+threetwo.onload = function () {
+    threetwo.contentWindow.scrollTo(width/3.99,height/2);
+}
+var threethree = document.getElementById('threethree');
+threethree.onload = function () {
+    threethree.contentWindow.scrollTo(width/2,height/2);
+}
+var threefour = document.getElementById('threefour');
+threefour.onload = function () {
+    threefour.contentWindow.scrollTo(width/1.3,height/2);
+}
+
+var fourone = document.getElementById('fourone');
+fourone.onload = function () {
+    fourone.contentWindow.scrollTo(0,height/1.334);
+}
+var fourtwo = document.getElementById('fourtwo');
+fourtwo.onload = function () {
+    fourtwo.contentWindow.scrollTo(width/3.99,height/1.334);
+}
+var fourthree = document.getElementById('fourthree');
+fourthree.onload = function () {
+    fourthree.contentWindow.scrollTo(width/2,height/1.334);
+}
+var fourfour = document.getElementById('fourfour');
+fourfour.onload = function () {
+    fourfour.contentWindow.scrollTo(width/1.3,height/1.334);
+}
+
+
+//document.getElementById('div_iframe').scrollTop = 138
+//$('#div_iframe').scrollTop(938)
+</script>
+
+</body>
+</html>
